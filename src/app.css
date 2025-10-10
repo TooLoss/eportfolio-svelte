@@ -4,6 +4,27 @@
     box-sizing: border-box;
 }
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
 :root {
     --color-bg-1: hsl(0, 0%, 10%);
     --color-bg-2: hsl(0, 0%, 13%);
@@ -12,26 +33,84 @@
     --color-text: hsl(0, 0%, 98%);
     --color-text-muted: hsl(0, 0%, 55%);
 
+    --size-text-title: 3rem;
+    --size-text-subtitle: 1.5rem;
+    --size-text-part: 1.6rem;
     --size-text-tag: 1rem;
+    --size-text-smalltext: 0.8rem;
 
-    --size-cta-padding-top: 0.7rem;
-    --size-cta-padding-left: 0.5rem;
-    --size-section: 2rem;
+    --size-section-gap: 2.5rem;
+    --size-page: 20rem;
+    --size-vertical-gap: 0.5rem;
+    --size-header-top: 7rem;
 
     --size-icon: 20px;
 
     background-color: var(--color-bg-1);
 }
 
+h1, h2, h3, p {
+    font-family: "Inter", sans-serif;
+    color: var(--color-text);
+    line-height: 0.8;
+}
+
+h1 {
+    font-size: var(--size-text-title);
+    font-weight: 800;
+}
+
+h2 {
+    font-size: var(--size-text-subtitle);
+    font-weight: 400;
+}
+
+h3 {
+    font-size: var(--size-text-part);
+    font-weight: 800;
+}
+
+p {
+    color: var(--color-text-muted);
+    line-height: 1.25;
+}
+
+header {
+    margin-top: var(--size-header-top);
+}
+
+.color-text-muted {
+    color: var(--color-text-muted);
+}
+
+.gap1 {
+    margin-top: 1rem;
+}
+
 .new-section {
     width: 100%;
+    max-width: 1000px;
+    align-content: center;
     display: flex;
     flex-direction: column;
-    gap: var(--size-section);
-    
+    justify-content: left;
+    gap: var(--size-section-gap);
+    padding: 0 1rem;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.align-horizontal {
+    display: flex;
+    gap: 1rem;
 }
 
 .text-container {
     display: flex;
     flex-direction: column;
+    gap: var(--size-vertical-gap);
 }

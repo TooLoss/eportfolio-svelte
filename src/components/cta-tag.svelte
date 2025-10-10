@@ -11,7 +11,6 @@
 </button>
 
 <style>
-    @import "../app.css";
 
     .cta-button-icon {
         width: var(--size-icon);
@@ -30,15 +29,9 @@
         color: var(--color-text);
         border-radius: 7pt;
         border: 1px solid var(--color-border);
-        padding: var(--size-cta-padding-left) var(--size-cta-padding-top);
+        padding: 0.5rem 0.7rem;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
         transition: background-color 0.2s, box-shadow 0.2s;
-    }
-
-    span {
-        font-family: "Inter", sans-serif;
-        font-size: var(--size-text-tag);
-        font-weight: 600;
     }
 
 </style>
