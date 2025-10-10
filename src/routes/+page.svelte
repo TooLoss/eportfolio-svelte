@@ -1,6 +1,7 @@
 <script>
     import CtaButton from '$components/cta-tag.svelte';
     import Stack from '$components/stack.svelte';
+    import ProjectOverview from '$components/project-overview.svelte';
 
     import githubIcon from '$lib/assets/github-logo.svg';
     import linkedinIcon from '$lib/assets/linkedin-logo.svg';
@@ -28,19 +29,25 @@
             <p>I focus on coding in low level languages, with skills extending to visual design and representation. I
                 enjoy
                 taking ideas and developing them into concrete solutions.</p>
-            <h3>Education</h3>
-            <h3>Projects</h3>
-            <h3>Skills</h3>
         </section>
     </section>
 </header>
 
-<Stack
-label="unreal engine"
-iconSrc={pythonIcon}
->
+<!-- TODO: API Call to get projects -->
+<section class="page">
+    <section class="new-section">
+        <h3>Projects</h3>
+        <div class="align-horizontal gap1">
 
-</Stack>
+            <ProjectOverview
+                projectImage="https://github.com/TooLoss/document-scan-python/raw/main/showcase-images/before-after.jpg"
+            >
+            </ProjectOverview>
+
+        </div>
+    </section>
+</section>
+
 
 <style>
     @import "../app.css";
