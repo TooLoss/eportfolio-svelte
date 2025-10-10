@@ -3,10 +3,16 @@
   import githubIcon from '$lib/assets/github-logo.svg'; 
 </script>
 
-
+<header>
+    <section class="new-section">
+        <div class="text-container">
+            <h1>TEST</h1>
+        </div>
+    </section>
+</header>
 
 <CtaButton
-  label="View Source" 
+  label="TooLoss"
   iconSrc={githubIcon}
 ></CtaButton>
 
