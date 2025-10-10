@@ -1,73 +1,58 @@
 :root {
-  --color-bg-1: hsl(0, 0%, 10%);
-  --color-bg-2: hsl(0, 0%, 13%);
-  --color-bg-3: hsl(0, 0%, 20%);
-  --color-border: hsl(0, 0%, 25%);
-  --color-text: hsl(0, 0%, 98%);
-  --color-text-muted: hsl(0, 0%, 55%);
+    --color-bg-1: hsl(0, 0%, 10%);
+    --color-bg-2: hsl(0, 0%, 13%);
+    --color-bg-3: hsl(0, 0%, 20%);
+    --color-border: hsl(0, 0%, 25%);
+    --color-text: hsl(0, 0%, 98%);
+    --color-text-muted: hsl(0, 0%, 55%);
 
-  --text-tag: 1.5rem;
+    --size-text-tag: 1.5rem;
 
-  background-color: var(--color-bg-1);
+    ---size-icon: 10px;
+
+    background-color: var(--color-bg-1);
 }
-/*
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
 body {
-  margin: 0;
-  padding: 0;
-  line-height: 1.5;
-  font-family: 'Your Google Font Name', sans-serif; 
+	line-height: 1;
 }
-
-h1, h2, h3, h4, h5, h6, 
-p, 
-blockquote, 
-figure, 
-form, 
-fieldset {
-  margin-top: 0;
-  margin-bottom: 0;
+ol, ul {
+	list-style: none;
 }
-
-ul,
-ol {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+blockquote, q {
+	quotes: none;
 }
-
-img {
-  display: block; 
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
 }
-
-input,
-button,
-textarea,
-select {
-  font: inherit;
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
-
-a {
-  text-decoration: none; 
-  color: inherit;
-}
-
-.cta-button {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    font-family: "Inter";
-    font-size: var(--text-tag);
-    background-color: var(--color-bg-2);
-    color: var(--color-text);
-    border-radius: 7pt;
-    border: 1px solid var(--color-border);
-    padding: 0.5rem 1rem;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
-}
-
-.cta-button-icon {
-    width: var(--text-tag);
-    height: var(--text-tag);
-    fill: var(--color-text);
-}
-    */

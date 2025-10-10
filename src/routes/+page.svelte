@@ -1,15 +1,15 @@
 <script>
-  import ctabutton from '$components/cta-tag.svelte';
+  import CtaButton from '$components/cta-tag.svelte';
   import githubIcon from '$lib/assets/github-logo.svg'; 
 </script>
 
 
 
-<ctabutton 
+<CtaButton
   label="View Source" 
   iconSrc={githubIcon}
-/>
+></CtaButton>
 
 <style>
-	@import "../app.css"
+	@import "../app.css";
 </style>

@@ -7,7 +7,7 @@
   {#if iconSrc}
     <img src={iconSrc} class="cta-button-icon" alt="{label} icon" />
   {/if}
-  <h6>{label}</h6>
+  <span>{label}</span>
 </button>
 
 <style>
@@ -15,8 +15,8 @@
     display: flex;
     gap: 1rem;
     align-items: center;
-    font-family: "Inter";
-    font-size: var(--text-tag);
+    font-family: "Inter", sans-serif;
+    font-size: var(--size-text-tag);
     background-color: var(--color-bg-2);
     color: var(--color-text);
     border-radius: 7pt;
@@ -24,10 +24,5 @@
     padding: 0.5rem 1rem;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
     transition: background-color 0.2s, box-shadow 0.2s;
-  }
-
-  span {
-    font-family: "Inter";
-    font-size: var(--text-tag);
   }
 </style>
