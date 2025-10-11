@@ -52,10 +52,10 @@
 
     .text-zone {
         padding: var(--project-padding-vertical) var(--project-padding-horizontal);
-        flex-grow: 1;
         display: flex;
+        gap: 0.8rem;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: start;
     }
 
     .project-text-container {
@@ -72,8 +72,17 @@
         border-radius: 7pt;
         border: 1px solid var(--color-border);
 
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+
         display: flex;
         flex-direction: column;
+
+        transition: background-color 0.2s, box-shadow 0.2s;
+    }
+
+    .project-box:hover {
+        box-shadow: 0 4px 5px rgba(0, 0, 0, 0.5);
     }
 
     .project-title {
@@ -91,6 +100,7 @@
 
     .stack-align {
         display: flex;
+        flex-wrap: wrap;
         gap: 0.5rem;
     }
 

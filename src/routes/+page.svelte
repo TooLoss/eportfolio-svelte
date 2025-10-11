@@ -1,10 +1,12 @@
 <script lang="ts">
     import {type Snippet} from 'svelte';
 
-    import CtaButton from '$components/cta-tag.svelte';
+    import CtaTag from '$components/cta-tag.svelte';
     import Stack from '$components/stack.svelte';
     import ProjectOverview from '$components/project-overview.svelte';
     import Education from '$components/education.svelte';
+    import GithubProjects from '$components/github-projects.svelte';
+    import CtaButton from '$components/cta-button.svelte';
 
     import githubIcon from '$lib/assets/github-logo.svg';
     import linkedinIcon from '$lib/assets/linkedin-logo.svg';
@@ -23,16 +25,16 @@
                 <h1>Hi! This is Bilèle El Haddadi. 👋</h1>
                 <h2 class="color-text-muted">software engineer student</h2>
                 <div class="align-horizontal margin-top1">
-                    <CtaButton
+                    <CtaTag
                             label="TooLoss"
                             url="https://github.com/TooLoss"
                             iconSrc={githubIcon}
-                    ></CtaButton>
-                    <CtaButton
+                    ></CtaTag>
+                    <CtaTag
                             label="bilele-elhaddadi"
                             url="https://www.linkedin.com/in/bilele-elhaddadi/"
                             iconSrc={linkedinIcon}
-                    ></CtaButton>
+                    ></CtaTag>
                 </div>
             </div>
             <p>I focus on coding in low level languages, with skills extending to visual design and representation. I
@@ -80,6 +82,11 @@
     </section>
 </section>
 
+<GithubProjects></GithubProjects>
+
+<CtaButton
+    label="Learn More"
+></CtaButton>
 
 <style lang="css">
     @import "../app.css";

@@ -1,0 +1,22 @@
+[
+  {
+    "projectTitle": "document scanner + OCR",
+    "description": "A pure Python document scanner developed from scratch for academic purposes.",
+    "projectLink": "https://github.com/TooLoss/document-scan-python",
+    "projectImage": "https://github.com/TooLoss/document-scan-python/raw/main/showcase-images/before-after.jpg",
+    "stackComponents": [
+      { "label": "Python" },
+      { "label": "JupyterNotebook" }
+    ]
+  },
+  {
+    "projectTitle": "Flashcard Android App",
+    "description": "App to learn German.",
+    "projectLink": "https://github.com/TooLoss/dicodeutsch-learn-android",
+    "projectImage": "https://user-images.githubusercontent.com/43108590/188199896-b0f611d0-e0d8-4955-8dea-ade760d6240f.png",
+    "stackComponents": [
+      { "label": "Java"},
+      { "label": "Kotlin"}
+    ]
+  }
+]
