@@ -40,6 +40,7 @@ time, mark, audio, video {
     --size-text-smalltext: 0.8rem;
 
     --size-section-gap: 2.5rem;
+    --size-component-gap: 1rem;
     --size-page: 20rem;
     --size-vertical-gap: 0.5rem;
     --size-header-top: 7rem;
@@ -87,7 +88,7 @@ header {
     margin-top: 1rem;
 }
 
-.new-section {
+.section-view {
     width: 100%;
     max-width: 1000px;
     align-content: center;
@@ -96,6 +97,12 @@ header {
     justify-content: left;
     gap: var(--size-section-gap);
     padding: 0 1rem;
+}
+
+.new-section {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-component-gap);
 }
 
 .page {

@@ -1,19 +1,29 @@
-<script>
-    export let projectTitle = 'project';
-    export let description = 'lorem impsum dolores bloa';
-    export let projectLink = '';
-    export let projectImage = '';
-    export let stack = {};
+<script lang="ts">
+    import { type Snippet } from 'svelte';
+    import Stack from '$components/stack.svelte'
+
+    let {
+        projectTitle = 'project',
+        description = 'lorem impsum dolores bloa',
+        projectLink = '',
+        projectImage = '',
+        stackComponents = [] as { label: string; iconSrc: string; }[]
+    } = $props();
 </script>
 
 <a href={projectLink} rel="noopener noreferrer" target="_blank">
     <section class="project-box">
         <img src={projectImage} alt={projectTitle} />
         <div class="text-zone">
-            <div class="align-horizontal">
-                {stack}
+            <div class="stack-align">
+                {#each stackComponents as newstack }
+                    <Stack
+                    label={newstack.label}
+                    iconSrc={newstack.iconSrc}
+                    />
+                {/each}
             </div>
-            <div class="text-container">
+            <div class="text-container gap1">
                 <span class="project-title">{projectTitle}</span>
                 <p>{description}</p>
             </div>
@@ -22,7 +32,7 @@
 </a>
 
 
-<style>
+<style lang="css">
     :root {
         --project-width: 25rem;
         --project-height: 20rem;
@@ -58,6 +68,16 @@
         color: var(--color-text-muted);
         font-size: var(--size-text-smalltext);
         font-weight: 400;
+    }
+
+    a {
+        font-style: normal;
+        text-decoration: none;
+    }
+
+    .stack-align {
+        display: flex;
+        gap: 0.5rem;
     }
 
 </style>
