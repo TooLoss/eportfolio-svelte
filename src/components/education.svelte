@@ -3,6 +3,7 @@
         name = "Lycée Alfred Kaster",
         subsection = "Baccalauréat Général",
         date = "2022-2023",
+        end = false,
     } = $props();
 </script>
 
@@ -11,7 +12,7 @@
         <div class="education-form-circle">
 
         </div>
-        <div class="education-form-stick">
+        <div class="education-form-stick" class:education-form-stick-end={end}>
 
         </div>
     </div>
@@ -79,6 +80,13 @@
         flex-grow: 1;
         align-content: center;
         justify-content: center;
+    }
+
+    .education-form-stick-end {
+        background: linear-gradient(0deg,rgba(0, 0, 0, 0) 0%, var(--color-text) 100%);
+        border-width: var(--education-border-stick);
+        border-style: solid;
+        border-image: linear-gradient(0deg, rgba(0, 0, 0, 0), var(--color-text)) 1;
     }
 
     .education-bar {

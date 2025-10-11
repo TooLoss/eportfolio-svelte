@@ -79,6 +79,7 @@
                         name="Alfred Kastler - High School"
                         date="2020 - 2023"
                         subsection="High School Diploma  - Highest Honors"
+                        end={true}
                 ></Education>
             </div>
         </div>
