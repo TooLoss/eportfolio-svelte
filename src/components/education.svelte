@@ -55,6 +55,10 @@
         gap: 1rem;
     }
 
+    h3 {
+        font-size: var(--size-text-subtitle);
+    }
+
     .margin-down {
         margin-bottom: var(--education-spacing);
     }
