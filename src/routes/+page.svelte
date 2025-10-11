@@ -24,6 +24,7 @@
             <div class="text-container">
                 <h1>Hi! This is Bilèle El Haddadi. 👋</h1>
                 <h2 class="color-text-muted">software engineer student</h2>
+                <h2 class="color-text-muted">toulouse · france</h2>
                 <div class="align-horizontal margin-top1">
                     <CtaTag
                             label="TooLoss"
@@ -36,10 +37,10 @@
                             iconSrc={linkedinIcon}
                     ></CtaTag>
                 </div>
+                <p class="margin-top1">I focus on coding in low level languages, with skills extending to visual design and representation. I
+                    enjoy
+                    taking ideas and developing them into concrete solutions.</p>
             </div>
-            <p>I focus on coding in low level languages, with skills extending to visual design and representation. I
-                enjoy
-                taking ideas and developing them into concrete solutions.</p>
         </section>
     </section>
 </header>
@@ -95,11 +96,13 @@
     </section>
 </section>
 
-<GithubProjects></GithubProjects>
-
-<CtaButton
-    label="Learn More"
-></CtaButton>
+<footer>
+    <div class = "bar"></div>
+    <div class="footer-container center">
+        <p>Made with Svelte.</p>
+        <p>&copy; {new Date().getFullYear()} Bilèle EL HADDADI. MIT License.</p>
+    </div>
+</footer>
 
 <style lang="css">
     @import "../app.css";

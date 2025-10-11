@@ -40,11 +40,11 @@ time, mark, audio, video {
     --size-text-smalltext: 1.2em;
     --size-text-smallesttext: 1em;
 
-    --size-section-gap: 5rem;
-    --size-component-gap: 2rem;
+    --size-section-gap: 15rem;
+    --size-component-gap: 3rem;
     --size-page: 20rem;
     --size-vertical-gap: 0.7rem;
-    --size-header-top: 7rem;
+    --size-header-top: 10rem;
 
     --title-line-height: 0.8;
 
@@ -84,7 +84,7 @@ time, mark, audio, video {
     }
 }
 
-h1, h2, h3, p {
+h1, h2, h3, p, span {
     font-family: "Inter", sans-serif;
     color: var(--color-text);
     line-height: var(--title-line-height);
@@ -118,6 +118,12 @@ header {
 a {
     font-style: normal;
     text-decoration: none;
+}
+
+footer {
+    font-style: italic;
+    color: var(--color-text-muted);
+    font-size: var(--size-text-smallesttext);
 }
 
 .color-text-muted {
@@ -186,4 +192,35 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+
+}
+
+.center {
+    align-items: center;
+}
+
+.footer-container {
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.bar {
+    margin: 10rem 2rem 2rem;
+    width: 100%;
+    height: 0;
+    max-width: 1000px;
+    background-color: var(--color-border);
+    border: 1px solid var(--color-border);
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
