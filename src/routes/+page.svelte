@@ -1,5 +1,7 @@
 <script lang="ts">
     import {type Snippet} from 'svelte';
+    import { fly } from 'svelte/transition';
+
 
     import CtaTag from '$components/cta-tag.svelte';
     import Stack from '$components/stack.svelte';
@@ -22,7 +24,7 @@
     <section class="page">
         <section class="section-view">
             <div class="text-container">
-                <h1>Hi! This is Bilèle El Haddadi. 👋</h1>
+                <h1 id="main-title">Hi! This is Bilèle El Haddadi. 👋</h1>
                 <h2 class="color-text-muted">software engineer student</h2>
                 <h2 class="color-text-muted">toulouse · france</h2>
                 <div class="align-horizontal margin-top1">

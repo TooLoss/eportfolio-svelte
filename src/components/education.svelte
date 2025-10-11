@@ -1,8 +1,8 @@
 <script lang="ts">
     let {
-        name="Lycée Alfred Kaster",
-        subsection="Baccalauréat Général",
-        date="2022-2023",
+        name = "Lycée Alfred Kaster",
+        subsection = "Baccalauréat Général",
+        date = "2022-2023",
     } = $props();
 </script>
 
@@ -38,6 +38,7 @@
         --education-circlesize: 2rem;
         --education-border: 5px;
         --education-border-stick: 3px;
+        --education-spacing: 5rem;
     }
 
     .education-section {
@@ -54,7 +55,7 @@
     }
 
     .margin-down {
-        margin-bottom: 3rem;
+        margin-bottom: var(--education-spacing);
     }
 
     .education-form {
