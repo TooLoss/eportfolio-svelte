@@ -1,14 +1,17 @@
 <script>
     export let label = 'Button';
     export let iconSrc = '';
+    export let url = "";
 </script>
 
-<button class="cta-button">
-    {#if iconSrc}
-        <img src={iconSrc} class="cta-button-icon" alt="{label} icon"/>
-    {/if}
-    <span>{label}</span>
-</button>
+<a href={url} rel="noopener noreferrer" target="_blank">
+    <button class="cta-button">
+        {#if iconSrc}
+            <img src={iconSrc} class="cta-button-icon" alt="{label} icon"/>
+        {/if}
+        <span>{label}</span>
+    </button>
+</a>
 
 <style>
 
@@ -31,7 +34,12 @@
         border: 1px solid var(--color-border);
         padding: 0.5rem 0.7rem;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        cursor: pointer;
         transition: background-color 0.2s, box-shadow 0.2s;
+    }
+
+    .cta-button:hover {
+        box-shadow: 0 4px 5px rgba(0, 0, 0, 1);
     }
 
 </style>

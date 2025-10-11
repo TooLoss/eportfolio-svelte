@@ -25,10 +25,12 @@
                 <div class="align-horizontal margin-top1">
                     <CtaButton
                             label="TooLoss"
+                            url="https://github.com/TooLoss"
                             iconSrc={githubIcon}
                     ></CtaButton>
                     <CtaButton
                             label="bilele-elhaddadi"
+                            url="https://www.linkedin.com/in/bilele-elhaddadi/"
                             iconSrc={linkedinIcon}
                     ></CtaButton>
                 </div>

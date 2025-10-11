@@ -46,15 +46,41 @@ time, mark, audio, video {
     --size-vertical-gap: 0.7rem;
     --size-header-top: 7rem;
 
+    --title-line-height: 0.8;
+
     --size-icon: 20px;
 
     background-color: var(--color-bg-1);
 }
 
+@media (max-width: 1280px) {
+    :root {
+        --size-text-title: 3rem;
+        --size-text-subtitle: 1.5rem;
+        --size-text-part: 1.6rem;
+        --size-text-tag: 1.5rem;
+        --size-text-smalltext: 1.2em;
+        --size-text-smallesttext: 1em;
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --size-text-title: 2rem;
+        --size-text-subtitle: 1.2rem;
+        --size-text-part: 1.2rem;
+        --size-text-tag: 1rem;
+        --size-text-smalltext: 1em;
+        --size-text-smallesttext: 0.8em;
+        --title-line-height: 1;
+        --size-section-gap: 3rem;
+    }
+}
+
 h1, h2, h3, p {
     font-family: "Inter", sans-serif;
     color: var(--color-text);
-    line-height: 0.8;
+    line-height: var(--title-line-height);
 }
 
 h1 {
@@ -80,6 +106,11 @@ p {
 
 header {
     margin-top: var(--size-header-top);
+}
+
+a {
+    font-style: normal;
+    text-decoration: none;
 }
 
 .color-text-muted {
@@ -116,6 +147,7 @@ header {
 
 .align-horizontal {
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
 }
 

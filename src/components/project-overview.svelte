@@ -89,14 +89,22 @@
         font-weight: 400;
     }
 
-    a {
-        font-style: normal;
-        text-decoration: none;
-    }
-
     .stack-align {
         display: flex;
         gap: 0.5rem;
+    }
+
+    @media (max-width: 1280px) {
+        :root {
+
+        }
+    }
+
+    @media (max-width: 768px) {
+        :root {
+            --project-width: 19rem;
+            --project-height: 20rem;
+        }
     }
 
 </style>

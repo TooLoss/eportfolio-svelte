@@ -33,6 +33,13 @@
 </section>
 
 <style>
+
+    :root {
+        --education-circlesize: 2rem;
+        --education-border: 5px;
+        --education-border-stick: 3px;
+    }
+
     .education-section {
         display: flex;
         gap: 2rem;
@@ -40,6 +47,7 @@
 
     .education-text-align {
         display: flex;
+        flex-wrap: wrap;
         flex-grow: 1;
         align-items: center;
         gap: 1rem;
@@ -58,14 +66,15 @@
 
     .education-form-circle {
         border-radius: 50%;
-        height: 2rem;
-        width: 2rem;
-        border: 5px solid var(--color-text);
+        height: var(--education-circlesize);
+        width: var(--education-circlesize);
+        border: var(--education-border) solid var(--color-text);
     }
 
     .education-form-stick {
-        width: 1px;
-        border: 3px solid var(--color-text);
+        background-color: var(--color-text);
+        width: 0;
+        border: var(--education-border-stick) solid var(--color-text);
         flex-grow: 1;
         align-content: center;
         justify-content: center;
@@ -74,6 +83,7 @@
     .education-bar {
         flex-grow: 1;
         border: 1px solid var(--color-bg-2);
+        width: 0;
         height: 1px;
     }
 
@@ -85,5 +95,24 @@
     .date-text {
         color: var(--color-text-muted);
         font-weight: 500;
+        font-style: italic;
+    }
+
+    @media (max-width: 1280px) {
+        :root {
+
+        }
+    }
+
+    @media (max-width: 768px) {
+        :root {
+            --education-circlesize: 1.5rem;
+            --education-border: 3px;
+            --education-border-stick: 2px;
+        }
+
+        .education-bar {
+            display: none;
+        }
     }
 </style>
