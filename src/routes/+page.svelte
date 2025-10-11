@@ -70,13 +70,26 @@
         <div class="new-section">
             <h3>Projects</h3>
             <div class="align-horizontal margin-top1">
-                <ProjectOverview
-                        projectTitle="document scan"
-                        projectLink="https://github.com/TooLoss/document-scan-python"
-                        description="A pure Python document scanner developed from scratch for academic purposes."
-                        projectImage="https://github.com/TooLoss/document-scan-python/raw/main/showcase-images/before-after.jpg"
-                        stackComponents={pinnedStack}>
-                </ProjectOverview>
+                <div class="project-overview">
+                    <ProjectOverview
+                            projectTitle="document scan"
+                            projectLink="https://github.com/TooLoss/document-scan-python"
+                            description="A pure Python document scanner developed from scratch for academic purposes."
+                            projectImage="https://github.com/TooLoss/document-scan-python/raw/main/showcase-images/before-after.jpg"
+                            stackComponents={pinnedStack}>
+                    </ProjectOverview>
+                </div>
+                <div class="more-project">
+                    <div class="text-container">
+                        <h3>More Project</h3>
+                        <p>See more projects here</p>
+                        <div class="margin-top1">
+                            <CtaButton
+                                    label="More Projects"
+                            ></CtaButton>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

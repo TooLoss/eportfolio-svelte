@@ -55,12 +55,14 @@ time, mark, audio, video {
 
 @media (max-width: 1280px) {
     :root {
-        --size-text-title: 3rem;
-        --size-text-subtitle: 1.5rem;
-        --size-text-part: 1.6rem;
-        --size-text-tag: 1.5rem;
-        --size-text-smalltext: 1.2em;
-        --size-text-smallesttext: 1em;
+        --size-text-title: 2.5rem;
+        --size-text-subtitle: 1.3rem;
+        --size-text-part: 1.2rem;
+        --size-text-tag: 1rem;
+        --size-text-smalltext: 1em;
+        --size-text-smallesttext: 0.8em;
+        --title-line-height: 1;
+        --size-section-gap: 3rem;
     }
 }
 
@@ -74,6 +76,11 @@ time, mark, audio, video {
         --size-text-smallesttext: 0.8em;
         --title-line-height: 1;
         --size-section-gap: 3rem;
+        --size-component-gap: 1rem;
+    }
+
+    .project-overview {
+        display: none;
     }
 }
 
@@ -165,4 +172,18 @@ a {
 
 .flex-grow {
     flex-grow: 1;
+}
+
+.more-project {
+    flex-grow: 1;
+    background-color: var(--color-bg-2);
+    padding: var(--size-component-gap);
+
+    border-radius: 7pt;
+    border: 1px solid var(--color-border);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }

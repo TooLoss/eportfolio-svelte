@@ -114,5 +114,11 @@
         .education-bar {
             display: none;
         }
+
+        .education-text-align {
+            flex-direction: column;
+            justify-content: left;
+            align-items: start;
+        }
     }
 </style>
