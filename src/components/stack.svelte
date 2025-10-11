@@ -22,7 +22,7 @@
         gap: 0.5rem;
         align-items: center;
         font-family: "Inter", sans-serif;
-        font-size: var(--size-text-smalltext);
+        font-size: var(--size-text-smallesttext);
         font-weight: 400;
         background-color: var(--color-bg-3);
         color: var(--color-text);

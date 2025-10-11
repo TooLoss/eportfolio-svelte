@@ -23,7 +23,7 @@
                     />
                 {/each}
             </div>
-            <div class="text-container gap1">
+            <div class="project-text-container">
                 <span class="project-title">{projectTitle}</span>
                 <p>{description}</p>
             </div>
@@ -34,17 +34,34 @@
 
 <style lang="css">
     :root {
-        --project-width: 25rem;
-        --project-height: 20rem;
-        --project-textzone: 1rem;
+        --project-width: 29rem;
+        --project-height: 25rem;
+        --project-padding-vertical: 1.3rem;
+        --project-padding-horizontal: 1rem;
+
+        --project-textzone-gap: 0.5rem;
     }
 
     img {
         border-radius: 7pt 7pt 0 0;
     }
 
+    p {
+        font-size: var(--size-text-smallesttext);
+    }
+
     .text-zone {
-        padding: var(--project-textzone);
+        padding: var(--project-padding-vertical) var(--project-padding-horizontal);
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .project-text-container {
+        display: flex;
+        flex-direction: column;
+        gap: var(--project-textzone-gap);
     }
 
     .project-box {
@@ -57,7 +74,9 @@
 
         display: flex;
         flex-direction: column;
+    }
 
+    .project-title {
         font-family: "Inter", sans-serif;
         font-size: var(--size-text-tag);
         font-weight: 600;
