@@ -15,6 +15,25 @@
 
 <style>
 
+    :root {
+        --cta-tag-pad-horizontal: 0.5rem;
+        --cta-tag-pad-vertical: 0.7rem;
+    }
+
+    @media (max-width: 1280px) {
+        :root {
+            --cta-tag-pad-horizontal: 0.4rem;
+            --cta-tag-pad-vertical: 0.6rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+        :root {
+            --cta-tag-pad-horizontal: 0.3rem;
+            --cta-tag-pad-vertical: 0.5rem;
+        }
+    }
+
     .cta-button-icon {
         width: var(--size-icon);
         height: var(--size-icon);
@@ -32,7 +51,7 @@
         color: var(--color-text);
         border-radius: 7pt;
         border: 1px solid var(--color-border);
-        padding: 0.5rem 0.7rem;
+        padding: var(--cta-tag-pad-horizontal) var(--cta-tag-pad-vertical);
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
         cursor: pointer;
         transition: background-color 0.2s, box-shadow 0.2s;

@@ -1,42 +1,54 @@
 <script lang="ts">
-    import {type Snippet} from 'svelte';
-    import { fly } from 'svelte/transition';
+    import { revealText } from "$lib/revealHashAction";
+    import { onMount } from "svelte";
 
+    let titleRef: HTMLElement;
 
     import CtaTag from '$components/cta-tag.svelte';
-    import Stack from '$components/stack.svelte';
     import ProjectOverview from '$components/project-overview.svelte';
     import Education from '$components/education.svelte';
-    import GithubProjects from '$components/github-projects.svelte';
     import CtaButton from '$components/cta-button.svelte';
+    
+    import GithubProjects from "\$components/github-projects.svelte";
 
-    import githubIcon from '$lib/assets/github-logo.svg';
-    import linkedinIcon from '$lib/assets/linkedin-logo.svg';
-
-    import pythonIcon from '$lib/assets/python-icon.svg';
+    import emailLogo from '$lib/assets/email-logo.svg'
 
     let pinnedStack = [
-        {label: "Python", iconSrc: pythonIcon},
+        {label: "Python", iconSrc: "https://www.svgrepo.com/show/452091/python.svg"},
     ]
+
+    onMount(() => {
+        revealText(titleRef, { duration: 1500 });
+    });
 </script>
 
 <header>
     <section class="page">
         <section class="section-view">
             <div class="text-container">
-                <h1 id="main-title">Hi! This is Bilèle El Haddadi. 👋</h1>
+                <h1 id="main-title" bind:this={titleRef}>Hi! This is Bilèle El Haddadi. 👋</h1>
                 <h2 class="color-text-muted">software engineer student</h2>
                 <h2 class="color-text-muted">toulouse · france</h2>
                 <div class="align-horizontal margin-top1">
                     <CtaTag
+                            label="bilele.elhaddadi@gmail.com"
+                            url="mailto:bilele.elhaddadi@gmail.com"
+                            iconSrc={emailLogo}
+                    ></CtaTag>
+                    <CtaTag
                             label="TooLoss"
                             url="https://github.com/TooLoss"
-                            iconSrc={githubIcon}
+                            iconSrc="https://www.svgrepo.com/show/512317/github-142.svg"
                     ></CtaTag>
                     <CtaTag
                             label="bilele-elhaddadi"
                             url="https://www.linkedin.com/in/bilele-elhaddadi/"
-                            iconSrc={linkedinIcon}
+                            iconSrc="https://www.svgrepo.com/show/494278/linkedin-round.svg"
+                    ></CtaTag>
+                    <CtaTag
+                            label="loss-graph"
+                            url="https://www.artstation.com/loss_graph"
+                            iconSrc="https://www.svgrepo.com/show/341618/artstation.svg"
                     ></CtaTag>
                 </div>
                 <p class="margin-top1">I focus on coding in low level languages, with skills extending to visual design and representation. I
@@ -98,6 +110,12 @@
     </section>
 </section>
 
+<GithubProjects>
+
+</GithubProjects>
+
+
+<!-- TODO: Improve footer -->
 <footer>
     <div class = "bar"></div>
     <div class="footer-container center">

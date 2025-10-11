@@ -26,12 +26,15 @@ time, mark, audio, video {
 }
 
 :root {
-    --color-bg-1: hsl(0, 0%, 10%);
-    --color-bg-2: hsl(0, 0%, 13%);
-    --color-bg-3: hsl(0, 0%, 20%);
-    --color-border: hsl(0, 0%, 25%);
-    --color-text: hsl(0, 0%, 98%);
-    --color-text-muted: hsl(0, 0%, 55%);
+
+    --hue: 235;
+
+    --color-bg-1: hsl(var(--hue), 15%, 8%);
+    --color-bg-2: hsl(var(--hue), 20%, 13%);
+    --color-bg-3: hsl(var(--hue), 30%, 20%);
+    --color-border: hsl(var(--hue), 20%, 25%);
+    --color-text: hsl(var(--hue), 0%, 98%);
+    --color-text-muted: hsl(var(--hue), 5%, 55%);
 
     --size-text-title: 3rem;
     --size-text-subtitle: 1.5rem;
@@ -40,6 +43,7 @@ time, mark, audio, video {
     --size-text-smalltext: 1.2em;
     --size-text-smallesttext: 1em;
 
+    --max-width: 1020px;
     --size-section-gap: 15rem;
     --size-component-gap: 3rem;
     --size-page: 20rem;
@@ -63,6 +67,7 @@ time, mark, audio, video {
         --size-text-smallesttext: 0.8em;
         --title-line-height: 1;
         --size-section-gap: 3rem;
+        --max-width: 768px;
     }
 }
 
@@ -71,7 +76,8 @@ time, mark, audio, video {
         --size-text-title: 2rem;
         --size-text-subtitle: 1.2rem;
         --size-text-part: 1.2rem;
-        --size-text-tag: 1rem;
+        --size-text-tag: 0.8em;
+        --size-icon: 10px;
         --size-text-smalltext: 1em;
         --size-text-smallesttext: 0.8em;
         --title-line-height: 1;
@@ -84,7 +90,7 @@ time, mark, audio, video {
     }
 }
 
-h1, h2, h3, p, span {
+h1, h2, h3, p, span, a {
     font-family: "Inter", sans-serif;
     color: var(--color-text);
     line-height: var(--title-line-height);
@@ -136,7 +142,7 @@ footer {
 
 .section-view {
     width: 100%;
-    max-width: 1000px;
+    max-width: var(--max-width);
     align-content: center;
     display: flex;
     flex-direction: column;
@@ -223,4 +229,13 @@ footer {
     border: 1px solid var(--color-border);
     padding-left: 2rem;
     padding-right: 2rem;
+}
+
+#main-title {
+    font-family: monospace;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    word-break: break-word;
+    transition: all 0.1s ease;
+    text-overflow: fade;
 }

@@ -11,7 +11,7 @@
     } = $props();
 </script>
 
-<a href={projectLink} rel="noopener noreferrer" target="_blank">
+<a href={projectLink} rel="noopener noreferrer" target="">
     <section class="project-box">
         <img src={projectImage} alt={projectTitle} />
         <div class="text-zone">
