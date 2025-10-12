@@ -9,6 +9,7 @@ export function getIconLanguages(lang: string): string {
         JupyterNotebook: "https://www.svgrepo.com/show/373718/jupyter.svg",
         Java: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg',
         Kotlin: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg',
+        Ada: "https://www.svgrepo.com/show/373419/ada.svg",
     }
     return icons[lang] || '';
 }

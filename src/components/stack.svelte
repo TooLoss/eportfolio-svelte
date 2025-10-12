@@ -6,11 +6,19 @@
 <button class="cta-button">
     {#if iconSrc}
         <img src={iconSrc} class="cta-button-icon" alt="{label} icon"/>
+        <span>{label}</span>
+    {:else}
+        <div style="height: var(--size-icon); width: 0"></div>
+        <span>{label}</span>
+        <div style="height: var(--size-icon); width: 0"></div>
     {/if}
-    <span>{label}</span>
 </button>
 
 <style>
+
+    span {
+        word-break: break-word;
+    }
 
     .cta-button-icon {
         width: var(--size-icon);
@@ -19,6 +27,7 @@
 
     .cta-button {
         display: flex;
+        flex-wrap: nowrap;
         gap: 0.5rem;
         align-items: center;
         font-family: "Inter", sans-serif;

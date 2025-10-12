@@ -5,7 +5,7 @@
     <section class="content">
         <div class="left">
             <a>
-                <p>Bilèle EL HADDADI</p>
+                <p id="main-title">Bilèle EL HADDADI</p>
             </a>
         </div>
         <div class="center">
@@ -25,6 +25,15 @@
 </nav>
 
 <style>
+    #main-title {
+        font-family: monospace;
+        word-wrap: break-word;
+        white-space: pre-wrap;
+        word-break: break-word;
+        transition: all 0.1s ease;
+        text-overflow: fade;
+    }
+
     nav {
         padding: 1rem;
         background-color: var(--color-bg-2);

@@ -59,6 +59,10 @@
                     and representation. I
                     enjoy
                     taking ideas and developing them into concrete solutions.</p>
+                <div class="margin-top1">
+                    <CtaButton
+                    label="Download Resume"></CtaButton>
+                </div>
             </div>
         </section>
     </section>
@@ -90,16 +94,20 @@
             <div class="box-filled">
                 <div class="text-container">
                     <h3>Learn More</h3>
-                    <h2 class="color-text-muted">learn more about engineering courses</h2>
+                    <p class="color-text-muted">learn more about engineering courses</p>
                     <div class="margin-top1">
                         <CtaButton
-                                label="Learn More"></CtaButton>
+                                url="/education"
+                                label="Engineering Courses"></CtaButton>
                     </div>
                 </div>
             </div>
         </div>
         <div class="new-section">
-            <h3>Projects</h3>
+            <div class="text-container">
+                <h3>Projects</h3>
+                <p>Explore my projects below.</p>
+            </div>
             <div class="align-horizontal margin-top1">
                 <div class="project-overview">
                     <ProjectOverview
@@ -123,6 +131,9 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="new-section">
+            <h3>About-me</h3>
         </div>
     </section>
 </section>
