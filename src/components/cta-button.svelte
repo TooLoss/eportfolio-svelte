@@ -3,7 +3,7 @@
     export let url = "";
 </script>
 
-<a href={url} rel="noopener noreferrer" target="_blank">
+<a href={url} rel="noopener noreferrer" target="">
     <button class="cta-button">
         <span>{label}</span>
     </button>
@@ -22,7 +22,7 @@
         color: var(--color-text);
         border-radius: 7pt;
         border: 1px solid var(--color-border);
-        padding: 0.5rem 0.7rem;
+        padding: 0.7rem 0.9rem;
         box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
         cursor: pointer;
         transition: background-color 0.2s, box-shadow 0.2s;

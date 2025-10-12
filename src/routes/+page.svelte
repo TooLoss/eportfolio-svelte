@@ -1,6 +1,6 @@
 <script lang="ts">
-    import { revealText } from "$lib/revealHashAction";
-    import { onMount } from "svelte";
+    import {revealText} from "$lib/revealHashAction";
+    import {onMount} from "svelte";
 
     let titleRef: HTMLElement;
 
@@ -8,7 +8,9 @@
     import ProjectOverview from '$components/project-overview.svelte';
     import Education from '$components/education.svelte';
     import CtaButton from '$components/cta-button.svelte';
-    
+    import Footer from '$components/footer.svelte'
+    import Navbar from '$components/navbar.svelte'
+
     import GithubProjects from "\$components/github-projects.svelte";
 
     import emailLogo from '$lib/assets/email-logo.svg'
@@ -18,9 +20,11 @@
     ]
 
     onMount(() => {
-        revealText(titleRef, { duration: 1500 });
+        revealText(titleRef, {duration: 1500});
     });
 </script>
+
+<Navbar></Navbar>
 
 <header>
     <section class="page">
@@ -51,7 +55,8 @@
                             iconSrc="https://www.svgrepo.com/show/341618/artstation.svg"
                     ></CtaTag>
                 </div>
-                <p class="margin-top1">I focus on coding in low level languages, with skills extending to visual design and representation. I
+                <p class="margin-top1">I focus on coding in low level languages, with skills extending to visual design
+                    and representation. I
                     enjoy
                     taking ideas and developing them into concrete solutions.</p>
             </div>
@@ -82,6 +87,16 @@
                         end={true}
                 ></Education>
             </div>
+            <div class="box-filled">
+                <div class="text-container">
+                    <h3>Learn More</h3>
+                    <h2 class="color-text-muted">learn more about engineering courses</h2>
+                    <div class="margin-top1">
+                        <CtaButton
+                                label="Learn More"></CtaButton>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="new-section">
             <h3>Projects</h3>
@@ -101,6 +116,7 @@
                         <p>See more projects here</p>
                         <div class="margin-top1">
                             <CtaButton
+                                    url="/projects"
                                     label="More Projects"
                             ></CtaButton>
                         </div>
@@ -111,19 +127,8 @@
     </section>
 </section>
 
-<GithubProjects>
-
-</GithubProjects>
-
-
 <!-- TODO: Improve footer -->
-<footer>
-    <div class = "bar"></div>
-    <div class="footer-container center">
-        <p>Made with Svelte.</p>
-        <p>&copy; {new Date().getFullYear()} Bilèle EL HADDADI. MIT License.</p>
-    </div>
-</footer>
+<Footer></Footer>
 
 <style lang="css">
     @import "../app.css";

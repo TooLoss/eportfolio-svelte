@@ -61,6 +61,19 @@
 
     .margin-down {
         margin-bottom: var(--education-spacing);
+        animation: 1s ease-in-out 0s 1 marginSlide;
+    }
+
+    @keyframes marginSlide {
+        0% {
+            margin-bottom: 10rem;
+        }
+        20% {
+            margin-bottom: 10rem;
+        }
+        100% {
+            margin-bottom: var(--education-spacing);
+        }
     }
 
     .education-form {
@@ -108,6 +121,7 @@
     .date-text {
         color: var(--color-text-muted);
         font-weight: 500;
+        font-size: var(--size-text-smalltext);
         font-style: italic;
     }
 

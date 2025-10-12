@@ -7,7 +7,10 @@
     "stackComponents": [
       { "label": "Python" },
       { "label": "JupyterNotebook" }
-    ]
+    ],
+    "motivation": "-motivation",
+    "strategy": "-strategy",
+    "outcome": "-outcome"
   },
   {
     "projectTitle": "Flashcard Android App",
@@ -17,6 +20,9 @@
     "stackComponents": [
       { "label": "Java"},
       { "label": "Kotlin"}
-    ]
+    ],
+    "motivation": "-",
+    "strategy": "-",
+    "outcome": "-"
   }
 ]

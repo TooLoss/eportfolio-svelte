@@ -2,6 +2,7 @@
     import Stack from "$components/stack.svelte";
     import { getIconLanguages } from "$lib/iconLanguages";
     import CtaTag from "\$components/cta-tag.svelte";
+    import Footer from '$components/footer.svelte'
     
 
     export let data: any;
@@ -23,9 +24,9 @@
 <section class="page">
     <section class="section-view">
         <section class="new-section">
-            <a class="return" href="/">
+            <a class="return" href="/projects">
                 <img class="icon" src="https://www.svgrepo.com/show/533620/arrow-sm-left.svg" alt="←"/>
-                <h2>Return to main menue</h2>
+                <h2>previous</h2>
             </a>
             <div class="text-container">
                 <h1>{project.projectTitle}</h1>
@@ -51,23 +52,25 @@
         <section class="new-section">
             <div class="text-container">
                 <h3>Motivation</h3>
-                <p>Lorem</p>
+                <p>{project.motivation}</p>
             </div>
         </section>
         <section class="new-section">
             <div class="text-container">
                 <h3>Strategy</h3>
-                <p>Lorem</p>
+                <p>{project.strategy}</p>
             </div>
         </section>
         <section class="new-section">
             <div class="text-container">
                 <h3>Outcome</h3>
-                <p>Lorem</p>
+                <p>{project.outcome}</p>
             </div>
         </section>
     </section>
 </section>
+
+<Footer></Footer>
 
 <style>
     #preview-img {

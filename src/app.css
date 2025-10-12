@@ -29,12 +29,13 @@ time, mark, audio, video {
 
     --hue: 235;
 
-    --color-bg-1: hsl(var(--hue), 15%, 8%);
-    --color-bg-2: hsl(var(--hue), 20%, 13%);
-    --color-bg-3: hsl(var(--hue), 30%, 20%);
+    --color-bg-1: hsl(var(--hue), 15%, 6%);
+    --color-bg-2: hsl(var(--hue), 20%, 10%);
+    --color-bg-3: hsl(var(--hue), 30%, 15%);
     --color-border: hsl(var(--hue), 20%, 25%);
     --color-text: hsl(var(--hue), 0%, 98%);
     --color-text-muted: hsl(var(--hue), 5%, 55%);
+    --color: hsl(var(--hue), 80%, 55%);
 
     --size-text-title: 3rem;
     --size-text-subtitle: 1.5rem;
@@ -49,6 +50,7 @@ time, mark, audio, video {
     --size-page: 20rem;
     --size-vertical-gap: 0.7rem;
     --size-header-top: 10rem;
+    --size-margin-top: 1.5rem;
 
     --title-line-height: 0.8;
 
@@ -83,10 +85,7 @@ time, mark, audio, video {
         --title-line-height: 1;
         --size-section-gap: 3rem;
         --size-component-gap: 1rem;
-    }
-
-    .project-overview {
-        display: none;
+        --size-margin-top: 0.5rem;
     }
 }
 
@@ -104,6 +103,7 @@ h1 {
 h2 {
     font-size: var(--size-text-subtitle);
     font-weight: 400;
+    font-variant: small-caps slashed-zero;
 }
 
 h3 {
@@ -137,7 +137,7 @@ footer {
 }
 
 .margin-top1 {
-    margin-top: 1.5rem;
+    margin-top: var(--size-margin-top);
 }
 
 .section-view {
@@ -200,35 +200,8 @@ footer {
     justify-content: center;
 }
 
-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-
-}
-
 .center {
     align-items: center;
-}
-
-.footer-container {
-    padding-bottom: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-}
-
-.bar {
-    margin: 10rem 2rem 2rem;
-    width: 100%;
-    height: 0;
-    max-width: 1000px;
-    background-color: var(--color-border);
-    border: 1px solid var(--color-border);
-    padding-left: 2rem;
-    padding-right: 2rem;
 }
 
 #main-title {
@@ -238,4 +211,14 @@ footer {
     word-break: break-word;
     transition: all 0.1s ease;
     text-overflow: fade;
+}
+
+.box-filled {
+    padding: var(--size-component-gap);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--color-bg-2);
+    border: 1px solid var(--color-border);
+    border-radius: 7px;
 }

@@ -106,14 +106,25 @@
 
     @media (max-width: 1280px) {
         :root {
-
+            --project-width: 19rem;
+            --project-height: 20rem;
         }
     }
 
     @media (max-width: 768px) {
         :root {
             --project-width: 19rem;
-            --project-height: 20rem;
+        }
+
+        .project-box {
+            width: auto;
+            flex-grow: 1;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
         }
     }
 
