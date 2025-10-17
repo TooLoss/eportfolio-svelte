@@ -24,7 +24,9 @@
     });
 </script>
 
-<Navbar></Navbar>
+<Navbar
+    currentPage="home"
+></Navbar>
 
 <header>
     <section class="page">
@@ -32,7 +34,7 @@
             <div class="text-container">
                 <h1 id="main-title" bind:this={titleRef}>Hi! This is Bilèle El Haddadi. 👋</h1>
                 <h2 class="color-text-muted">software engineer student</h2>
-                <h2 class="color-text-muted">toulouse · france</h2>
+                <h2 class="color-text-muted">toulouse · france 🇫🇷</h2>
                 <div class="align-horizontal margin-top1">
                     <CtaTag
                             label="bilele.elhaddadi@gmail.com"
@@ -108,7 +110,7 @@
                 <h3>Projects</h3>
                 <p>Explore my projects below.</p>
             </div>
-            <div class="align-horizontal margin-top1">
+            <div class="grid-2 margin-top1">
                 <div class="project-overview">
                     <ProjectOverview
                             projectTitle="document scan"

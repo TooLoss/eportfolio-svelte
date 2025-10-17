@@ -39,8 +39,18 @@
     .projects-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
         grid-column-gap: 10px;
         grid-row-gap: 10px;
+        align-items: stretch;
+        grid-auto-rows: max-content;
     }
+
+    @media (max-width: 768px) {
+        .projects-container {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+
 </style>

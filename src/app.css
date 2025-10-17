@@ -44,12 +44,12 @@ time, mark, audio, video {
     --size-text-smalltext: 1.2em;
     --size-text-smallesttext: 1em;
 
-    --max-width: 1020px;
-    --size-section-gap: 10rem;
+    --max-width: 1200px;
+    --size-section-gap: 15rem;
     --size-component-gap: 3rem;
     --size-page: 20rem;
     --size-vertical-gap: 0.7rem;
-    --size-header-top: 10rem;
+    --size-header-top: 20rem;
     --size-margin-top: 1.5rem;
 
     --title-line-height: 0.8;
@@ -119,11 +119,16 @@ p {
 
 header {
     margin-top: var(--size-header-top);
+    margin-bottom: var(--size-header-top);
 }
 
 a {
     font-style: normal;
     text-decoration: none;
+}
+
+img {
+    display: flex;
 }
 
 footer {
@@ -221,4 +226,17 @@ footer {
     background-color: var(--color-bg-2);
     border: 1px solid var(--color-border);
     border-radius: 7px;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .grid-2 {
+        display: flex;
+        flex-direction: column;
+    }
 }

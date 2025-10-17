@@ -44,6 +44,7 @@
 
     img {
         border-radius: 7pt 7pt 0 0;
+        max-width: 100%;
     }
 
     p {
@@ -52,11 +53,12 @@
     }
 
     .text-zone {
-        padding: var(--project-padding-vertical) var(--project-padding-horizontal);
+        margin: var(--project-padding-vertical) var(--project-padding-horizontal);
         display: flex;
         gap: 0.8rem;
         flex-direction: column;
         justify-content: start;
+        overflow: hidden;
     }
 
     .project-text-container {
@@ -66,8 +68,8 @@
     }
 
     .project-box {
-        width: var(--project-width);
-        height: var(--project-height);
+        /*width: var(--project-width);*/
+        height: 100%;
         background-color: var(--color-bg-2);
 
         border-radius: 7pt;
@@ -97,12 +99,13 @@
         color: var(--color-text-muted);
         font-size: var(--size-text-smalltext);
         font-weight: 400;
+        text-overflow: ellipsis;
     }
 
     .stack-align {
         display: flex;
-        flex-wrap: wrap;
         gap: 0.5rem;
+        flex-wrap: nowrap;
     }
 
     @media (max-width: 1280px) {
@@ -120,12 +123,6 @@
         .project-box {
             width: auto;
             flex-grow: 1;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
         }
     }
 

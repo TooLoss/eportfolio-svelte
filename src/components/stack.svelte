@@ -22,12 +22,14 @@
 
     .cta-button-icon {
         width: var(--size-icon);
+        min-height: min-content;
         height: var(--size-icon);
     }
 
     .cta-button {
         display: flex;
         flex-wrap: nowrap;
+        flex: 0 0 auto;
         gap: 0.5rem;
         align-items: center;
         font-family: "Inter", sans-serif;
