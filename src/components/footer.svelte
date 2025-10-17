@@ -2,7 +2,7 @@
 </script>
 
 <footer>
-    <section id="no-margin" class="section-view">
+    <section id="no-margin" class="margin-top1">
         <div class="bar"></div>
 
         <section class="contact-section">
@@ -34,6 +34,7 @@
         flex-direction: column;
         align-items: center;
         align-content: center;
+        justify-content: center;
         margin: 10rem 2rem 2rem;
     }
 
@@ -62,7 +63,6 @@
 
     .bar {
         margin: 4rem 0;
-        width: 100%;
         height: 0;
         max-width: 1000px;
         background-color: var(--color-border);
@@ -70,13 +70,13 @@
     }
 
     .contact-section {
-        width: 100%;
+        width: 50rem;
         display: flex;
         flex-direction: column;
         align-content: start;
         justify-content: start;
         align-items: start;
-        padding: 0 4rem;
+        margin: 0 4rem;
         gap: 2rem
     }
 
