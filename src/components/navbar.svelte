@@ -1,30 +1,51 @@
-<script>
+<script lang="ts">
+    let {
+        currentPage=""
+    } = $props();
+
+    const pages = [
+        {name: "home", url:'/', selected:false},
+        {name: "projects", url:'/projects', selected:false},
+        {name: "about", url:'', selected:false},
+    ]
+
+    pages.forEach(page => {
+        page.selected = page.name === currentPage;
+    });
+
 </script>
 
 <nav>
-    <section class="content">
-        <div class="left">
-            <a>
+    <div class="fill">
+        <section class="content">
+            <a href="/">
                 <p id="main-title">Bilèle EL HADDADI</p>
             </a>
-        </div>
-        <div class="center">
-            <a>
-                <p>education</p>
-            </a>
-            <a>
-                <p>projects</p>
-            </a>
-            <a>
-                <p>about</p>
-            </a>
-        </div>
-        <div class="right">
-        </div>
-    </section>
+            <div class="center">
+                {#each pages as page}
+                <a href={page.url}>
+                    <p class="{page.selected ? 'selected' : ''}">{page.name}</p>
+                </a>
+                {/each}
+            </div>
+        </section>
+    </div>
 </nav>
 
 <style>
+    :root {
+        --navbar-padding: 1rem;
+        --navbar-margin-horizontal: 1rem;
+        --navbar-margin-vertical: 1rem;
+        --navbar-maxwidth: 1700px;
+    }
+
+    .selected {
+        outline: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 7px;
+        padding: 0.4rem 1rem;
+    }
+
     #main-title {
         font-family: monospace;
         word-wrap: break-word;
@@ -34,27 +55,39 @@
         text-overflow: fade;
     }
 
+    .fill {
+        height: 100%;
+        width: 100%;
+        padding: var(--navbar-margin-vertical) var(--navbar-margin-horizontal);
+
+        /*background-color: var(--color-bg-2);*/
+        border-radius: 7px;
+        margin: var(--navbar-margin-vertical) var(--navbar-margin-horizontal);
+        background: var(--color-bg-2) 0.2;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+
+        max-width: var(--navbar-maxwidth);
+    }
+
     nav {
-        padding: 1rem;
-        background-color: var(--color-bg-2);
-        border: 1px solid var(--color-border);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        padding: 1rem var(--navbar-padding);
 
         display: flex;
         align-content: center;
         justify-content: center;
         align-items: center;
-
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     }
 
     .content {
-        max-width: 2500px;
-
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1fr;
-        grid-column-gap: 1rem;
-        grid-row-gap: 1rem;
+        display: flex;
+        justify-content: left;
+        gap: var(--size-section-gap);
     }
 
     p {
@@ -62,33 +95,18 @@
         color: var(--color-text);
         font-variant: small-caps slashed-zero;
         font-size: var(--size-text-subtitle);
+        flex-grow: 1;
     }
 
     a {
         cursor: pointer;
-    }
-
-    .left {
-        grid-area: 1 / 1 / 2 / 2;
-        display: flex;
-        gap: 1rem;
-        align-items: start;
-        justify-content: left;
+        align-content: center;
     }
 
     .center {
-        grid-area: 1 / 2 / 2 / 3;
         display: flex;
         gap: 4rem;
         align-items: center;
         justify-content: center;
-    }
-
-    .right {
-        grid-area: 1 / 3 / 2 / 4;
-        display: flex;
-        gap: 1rem;
-        align-items: end;
-        justify-content: right;
     }
 </style>
