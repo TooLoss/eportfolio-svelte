@@ -18,7 +18,8 @@
 
     let stackComponents = project.stackComponents;
 
-    stackComponents.forEach((component : { label: string; iconSrc: string; }) => component .iconSrc = getIconLanguages(component .label))
+    stackComponents.forEach((component : { label: string; iconSrc: string; }) => component .iconSrc = getIconLanguages(component .label));
+    export const prerender = true;
 </script>
 
 <section class="page">

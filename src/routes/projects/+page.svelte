@@ -2,6 +2,7 @@
     import GithubProjects from "\$components/github-projects.svelte";
     import Footer from '$components/footer.svelte'
     import CtaReturn from "\$components/cta-return.svelte";
+    export const prerender = true;
 </script>
 
 <section class="page">

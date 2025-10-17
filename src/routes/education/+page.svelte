@@ -2,7 +2,7 @@
     import CtaReturn from "\$components/cta-return.svelte";
     import ListStack from "\$components/list-stack.svelte";
     import {getIconLanguages} from "$lib/iconLanguages.js";
-    import Footer from  "$components/footer.svelte"
+    export const prerender = true;
 </script>
 
 <section class="page">
