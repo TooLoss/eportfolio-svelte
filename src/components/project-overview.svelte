@@ -48,6 +48,7 @@
 
     p {
         font-size: var(--size-text-smallesttext);
+        text-overflow: ellipsis;
     }
 
     .text-zone {

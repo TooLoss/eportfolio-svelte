@@ -61,12 +61,12 @@ time, mark, audio, video {
 
 @media (max-width: 1280px) {
     :root {
-        --size-text-title: 2.5rem;
+        --size-text-title: 2rem;
         --size-text-subtitle: 1.3rem;
         --size-text-part: 1.2rem;
         --size-text-tag: 1rem;
-        --size-text-smalltext: 1em;
-        --size-text-smallesttext: 0.8em;
+        --size-text-smalltext: 0.8em;
+        --size-text-smallesttext: 0.6em;
         --title-line-height: 1;
         --size-section-gap: 3rem;
         --max-width: 768px;
@@ -80,7 +80,7 @@ time, mark, audio, video {
         --size-text-part: 1.2rem;
         --size-text-tag: 0.8em;
         --size-icon: 10px;
-        --size-text-smalltext: 1em;
+        --size-text-smalltext: 0.9em;
         --size-text-smallesttext: 0.8em;
         --title-line-height: 1;
         --size-section-gap: 3rem;

@@ -2,6 +2,7 @@
     import CtaReturn from "\$components/cta-return.svelte";
     import ListStack from "\$components/list-stack.svelte";
     import {getIconLanguages} from "$lib/iconLanguages.js";
+    import Footer from  "$components/footer.svelte"
 </script>
 
 <section class="page">
@@ -46,6 +47,8 @@
         </section>
     </section>
 </section>
+
+<Footer/>
 
 <style>
 </style>
