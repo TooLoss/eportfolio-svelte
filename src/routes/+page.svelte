@@ -25,7 +25,7 @@
 </script>
 
 <Navbar
-    currentPage="home"
+        currentPage="home"
 ></Navbar>
 
 <header>
@@ -57,13 +57,16 @@
                             iconSrc="https://www.svgrepo.com/show/341618/artstation.svg"
                     ></CtaTag>
                 </div>
-                <p class="margin-top1">I focus on coding in low level languages, with skills extending to visual design
-                    and representation. I
-                    enjoy
-                    taking ideas and developing them into concrete solutions.</p>
-                <div class="margin-top1">
+                <p class="margin-top1">I love making things, whether it’s through coding or art. Creativity drives my
+                    process: solving problems, turning ideas into something tangible. If what I
+                    create is useful or inspiring to others, that makes it even more meaningful.</p>
+                <div class="margin-top1 two-grid">
                     <CtaButton
-                    label="Download Resume"></CtaButton>
+                            url="/education"
+                            label="French Resume"></CtaButton>
+                    <CtaButton
+                            url="/education"
+                            label="English Resume"></CtaButton>
                 </div>
             </div>
         </section>

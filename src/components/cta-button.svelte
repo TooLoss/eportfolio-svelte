@@ -28,6 +28,14 @@
         transition: background-color 0.2s, box-shadow 0.2s;
     }
 
+    @media (max-width: 768px) {
+        .cta-button {
+            flex-grow: 1;
+            width: 100%;
+            justify-content: center;
+        }
+    }
+
     .cta-button:hover {
         box-shadow: 0 4px 5px rgba(0, 0, 0, 1);
     }

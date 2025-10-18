@@ -29,13 +29,14 @@
 </footer>
 
 <style lang="css">
+
     footer {
         display: flex;
         flex-direction: column;
         align-items: center;
         align-content: center;
         justify-content: center;
-        margin: 10rem 2rem 2rem;
+        margin: 0 2rem 2rem;
     }
 
     h2 {
@@ -44,6 +45,8 @@
 
     #no-margin {
         gap: 0;
+        width: 100%;
+        max-width: 1200px;
     }
 
     .footer-container {
@@ -70,7 +73,7 @@
     }
 
     .contact-section {
-        width: 50rem;
+        flex-grow: 1;
         display: flex;
         flex-direction: column;
         align-content: start;
@@ -84,5 +87,15 @@
         color: var(--color-text-muted);
         font-size: var(--size-text-subtitle);
         font-family: monospace;
+    }
+
+    @media (max-width: 782px) {
+        .contacts {
+            gap: 1rem;
+        }
+
+        .contact-section {
+            margin: 0 1rem;
+        }
     }
 </style>

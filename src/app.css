@@ -68,7 +68,8 @@ time, mark, audio, video {
         --size-text-smalltext: 0.8em;
         --size-text-smallesttext: 0.6em;
         --title-line-height: 1;
-        --size-section-gap: 3rem;
+        --size-section-gap: 10rem;
+        --size-header-top: 12rem;
         --max-width: 768px;
     }
 }
@@ -83,7 +84,8 @@ time, mark, audio, video {
         --size-text-smalltext: 0.9em;
         --size-text-smallesttext: 0.8em;
         --title-line-height: 1;
-        --size-section-gap: 3rem;
+        --size-section-gap: 8rem;
+        --size-header-top: 8rem;
         --size-component-gap: 1rem;
         --size-margin-top: 0.5rem;
     }
@@ -238,5 +240,17 @@ footer {
     .grid-2 {
         display: flex;
         flex-direction: column;
+    }
+}
+
+.two-grid {
+    display: flex;
+    gap: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .two-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(min(150px, 100%), 1fr));
     }
 }

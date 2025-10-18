@@ -21,7 +21,7 @@
     }));
 </script>
 
-<section class="page">
+<section class="page margin-top1">
     <div class="projects-container">
         {#each projects as project}
             <ProjectOverview
@@ -50,6 +50,10 @@
             display: flex;
             flex-direction: column;
         }
+    }
+
+    .page {
+        margin-top: var(--size-component-gap);
     }
 
 
