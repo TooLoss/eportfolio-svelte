@@ -55,7 +55,7 @@
     .text-zone {
         margin: var(--project-padding-vertical) var(--project-padding-horizontal);
         display: flex;
-        gap: 0.8rem;
+        gap: var(--project-padding-horizontal);
         flex-direction: column;
         justify-content: start;
         overflow: hidden;

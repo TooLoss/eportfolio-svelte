@@ -10,10 +10,8 @@
 <section class="education-section">
     <div class="education-form">
         <div class="education-form-circle">
-
         </div>
         <div class="education-form-stick" class:education-form-stick-end={end}>
-
         </div>
     </div>
     <div class="flex-grow text-container margin-down">
@@ -34,7 +32,6 @@
 </section>
 
 <style>
-
     :root {
         --education-circlesize: 2rem;
         --education-border: 5px;
@@ -100,7 +97,7 @@
     }
 
     .education-form-stick-end {
-        background: linear-gradient(0deg,rgba(0, 0, 0, 0) 0%, var(--color-text) 100%);
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, var(--color-text) 100%);
         border-width: var(--education-border-stick);
         border-style: solid;
         border-image: linear-gradient(0deg, rgba(0, 0, 0, 0), var(--color-text)) 1;
@@ -127,7 +124,6 @@
 
     @media (max-width: 1280px) {
         :root {
-
         }
     }
 

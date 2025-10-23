@@ -18,13 +18,10 @@
 <nav>
     <div class="fill">
         <section class="content">
-            <a href="/">
-                <p id="main-title">Bilèle EL HADDADI</p>
-            </a>
             <div class="center">
                 {#each pages as page}
                 <a href={page.url}>
-                    <p class="{page.selected ? 'selected' : ''}">{page.name}</p>
+                    <p class="non-selected {page.selected ? 'selected' : ''}">{page.name}</p>
                 </a>
                 {/each}
             </div>
@@ -35,15 +32,20 @@
 <style>
     :root {
         --navbar-padding: 1rem;
-        --navbar-margin-horizontal: 1rem;
-        --navbar-margin-vertical: 1rem;
+        --navbar-margin-horizontal: 0.8rem;
+        --navbar-margin-vertical: 0.5rem;
         --navbar-maxwidth: 1700px;
     }
 
     .selected {
-        outline: 1px solid rgba(255, 255, 255, 0.3);
+        outline: 1px solid rgba(255, 255, 255, 0.5);
         border-radius: 7px;
-        padding: 0.4rem 1rem;
+        padding: 0.2rem 0.6rem;
+    }
+
+    .non-selected {
+        border-radius: 7px;
+        padding: 0.2rem 0.4rem;
     }
 
     #main-title {
@@ -57,7 +59,6 @@
 
     .fill {
         height: 100%;
-        width: 100%;
         padding: var(--navbar-margin-vertical) var(--navbar-margin-horizontal);
 
         /*background-color: var(--color-bg-2);*/
@@ -67,7 +68,9 @@
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(5px);
         -webkit-backdrop-filter: blur(5px);
-        border: 1px solid rgba(255, 255, 255, 0.3);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+
+        display: flex;
 
         max-width: var(--navbar-maxwidth);
     }

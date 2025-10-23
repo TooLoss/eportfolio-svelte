@@ -10,18 +10,26 @@
     import CtaButton from '$components/cta-button.svelte';
     import Footer from '$components/footer.svelte'
     import Navbar from '$components/navbar.svelte'
+    import Swiper from "\$components/swiper.svelte";
 
     import GithubProjects from "\$components/github-projects.svelte";
 
     import emailLogo from '$lib/assets/email-logo.svg'
+    import lossLogo from "$lib/assets/loss-logo.jpg"
 
     let pinnedStack = [
         {label: "Python", iconSrc: "https://www.svgrepo.com/show/452091/python.svg"},
     ]
 
+
+    import showcaseArt from "$data/showcase-art.json";
+
+    const {swiperImages} = showcaseArt;
+
     onMount(() => {
         revealText(titleRef, {duration: 1500});
     });
+
 </script>
 
 <Navbar
@@ -51,15 +59,12 @@
                             url="https://www.linkedin.com/in/bilele-elhaddadi/"
                             iconSrc="https://www.svgrepo.com/show/494278/linkedin-round.svg"
                     ></CtaTag>
-                    <CtaTag
-                            label="loss-graph"
-                            url="https://www.artstation.com/loss_graph"
-                            iconSrc="https://www.svgrepo.com/show/341618/artstation.svg"
-                    ></CtaTag>
                 </div>
-                <p class="margin-top1">I love making things, whether it’s through coding or art. Creativity drives my
-                    process: solving problems, turning ideas into something tangible. If what I
-                    create is useful or inspiring to others, that makes it even more meaningful.</p>
+                <p class="margin-top1">I enjoy writing code and creating digital art. It lets me shape ideas into
+                    something concrete. When I code, I focus on solving specific problems and building tools that
+                    simplify daily tasks. The best part is seeing others find my work useful or inspiring. That makes it
+                    even more meaningful.
+                </p>
                 <div class="margin-top1 two-grid">
                     <CtaButton
                             url="/education"
@@ -138,7 +143,87 @@
             </div>
         </div>
         <div class="new-section">
-            <h3>About-me</h3>
+            <div class="text-container">
+                <h3>Interests</h3>
+                <p>Engineering student & artist: I solve technical problems methodically and create digital art, 3D
+                    models, and games sometimes for clients. This balance keeps me sharp, reliable, and ready to build
+                    practical software as a developer.</p>
+            </div>
+
+            <div class="align-horizontal">
+                <CtaTag
+                        label="LossGraphiste"
+                        url="https://linktr.ee/LossGraphiste"
+                        iconSrc="https://cdn.brandfetch.io/id_tNIm05N/theme/dark/symbol.svg?c=1dxbfHSJFAPEGdCLU4o5B"
+                ></CtaTag>
+                <CtaTag
+                        label="loss-graph"
+                        url="https://www.artstation.com/loss_graph"
+                        iconSrc="https://www.svgrepo.com/show/341618/artstation.svg"
+                ></CtaTag>
+                <CtaTag
+                        label="Losss"
+                        url="https://sketchfab.com/lossgraph"
+                        iconSrc="https://www.svgrepo.com/show/443422/brand-sketchfab.svg"
+                ></CtaTag>
+                <CtaTag
+                        label="Loss_"
+                        url="https://www.behance.net/loss_"
+                        iconSrc="https://www.svgrepo.com/show/521502/behance.svg"
+                ></CtaTag>
+            </div>
+            <div class="logo-center">
+                <img src={lossLogo} class="rounded-image container" alt="loss logo">
+            </div>
+            <div class="text-container left-padding-eachelement">
+                <p>
+                    I’m studying engineering, where I’ve learned to solve technical problems methodically. Alongside
+                    my studies, I create digital art, 3D models, and video games work. Sometimes for clients,
+                    sometimes just for the joy of it.
+                </p>
+                <div class="section-view">
+                    <Swiper>
+                        {#each swiperImages as img}
+                            <img class="swiper-image" src={img}>
+                        {/each}
+                    </Swiper>
+                </div>
+                <p>
+                    These experiences have taught me how to communicate effectively, meet deadlines, and collaborate
+                    with different kinds of people. They also help me step back, recharge through creativity, and
+                    return to technical projects with a fresh perspective and improved focus.
+                </p>
+                <div class="align-horizontal justify-center">
+                    <div class="sketchfab-embed-wrapper">
+                        <iframe title="Blastech B1-NA | Star Wars Blaster" frameborder="0" allowfullscreen
+                                mozallowfullscreen="true"
+                                webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking"
+                                xr-spatial-tracking
+                                execution-while-out-of-viewport execution-while-not-rendered web-share
+                                src="https://sketchfab.com/models/a815aa634beb4aba8316b5850c20a00b/embed?camera=0"></iframe>
+                    </div>
+                    <div class="sketchfab-embed-wrapper">
+                        <iframe title="SoroSuub F-187 Fusioncutter : Star Wars Tool" frameborder="0" allowfullscreen
+                                mozallowfullscreen="true" webkitallowfullscreen="true"
+                                allow="autoplay; fullscreen; xr-spatial-tracking"
+                                xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered
+                                web-share
+                                src="https://sketchfab.com/models/bc79e0fb25ea40528eac5da073f941a1/embed?camera=0"></iframe>
+                    </div>
+                    <div class="sketchfab-embed-wrapper">
+                        <iframe title="Heckler &amp; Koch G3 Wooden [Free]" frameborder="0" allowfullscreen
+                                mozallowfullscreen="true"
+                                webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking"
+                                xr-spatial-tracking
+                                execution-while-out-of-viewport execution-while-not-rendered web-share
+                                src="https://sketchfab.com/models/46c61eb1e59c44dba8c273f4b2828f65/embed?camera=0"></iframe>
+                    </div>
+                </div>
+                <p>
+                    Now, I want to apply these skills as a software developer, building practical tools that address
+                    real needs.
+                </p>
+            </div>
         </div>
     </section>
 </section>
