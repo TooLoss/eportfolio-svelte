@@ -8,8 +8,8 @@
       { "label": "Python" },
       { "label": "JupyterNotebook" }
     ],
-    "motivation": "-motivation",
-    "strategy": "-strategy",
+    "motivation": "As a final-year prépa project on the theme “transform, transition, convert,” I developed a document scanning tool designed to simplify the shift from paper to digital archives. The focus was on efficiency: the tool needed to process documents quickly using just a phone camera, with minimal user input. To achieve this, I automated the entire workflow, from image capture to digital conversion.",
+    "strategy": "The entrie will be an phone picture of of document. The output the scanned and binarized document with a correct format. I choose a bottum down tactics and found smaller issues to tackle in order to make it work.\n- Find corner position of the document\n- Make a transformation to the correct format\n- Treshold locally to make it efficient against light changes and shadow",
     "outcome": "-outcome"
   },
   {

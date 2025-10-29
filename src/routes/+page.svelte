@@ -122,7 +122,7 @@
                 <div class="project-overview">
                     <ProjectOverview
                             projectTitle="document scan"
-                            projectLink="https://github.com/TooLoss/document-scan-python"
+                            projectLink="/projects"
                             description="A pure Python document scanner developed from scratch for academic purposes."
                             projectImage="https://github.com/TooLoss/document-scan-python/raw/main/showcase-images/before-after.jpg"
                             stackComponents={pinnedStack}>
@@ -225,10 +225,27 @@
                 </p>
             </div>
         </div>
+        <div class="new-section">
+            <div class="text-container">
+                <h3>Career Development</h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="new-section">
+            <div class="text-container">
+                <h3>Civic Engagement</h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="new-section">
+            <div class="text-container">
+                <h3>Mobility</h3>
+                <p></p>
+            </div>
+        </div>
     </section>
 </section>
 
-<!-- TODO: Improve footer -->
 <Footer></Footer>
 
 <style lang="css">

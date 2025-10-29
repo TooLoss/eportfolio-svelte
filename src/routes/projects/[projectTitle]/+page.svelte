@@ -53,19 +53,19 @@
         <section class="new-section">
             <div class="text-container">
                 <h3>Motivation</h3>
-                <p>{project.motivation}</p>
+                <p class="margin-top1">{project.motivation}</p>
             </div>
         </section>
         <section class="new-section">
             <div class="text-container">
                 <h3>Strategy</h3>
-                <p>{project.strategy}</p>
+                <p class="margin-top1">{project.strategy}</p>
             </div>
         </section>
         <section class="new-section">
             <div class="text-container">
                 <h3>Outcome</h3>
-                <p>{project.outcome}</p>
+                <p class="margin-top1">{project.outcome}</p>
             </div>
         </section>
     </section>
@@ -83,6 +83,11 @@
         color: var(--color-text-muted);
         font-size: var(--size-text-smalltext);
     }
+
+    p {
+        text-indent: 1rem;
+
+}
 
     .icon {
         height: var(--size-icon);
