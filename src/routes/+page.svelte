@@ -143,13 +143,28 @@
             </div>
         </div>
         <div class="new-section">
+            <h3>Career Development</h3>
+            <div class="no-gap margin-top1">
+                <Education
+                        name="Freelancer"
+                        date="2018 - 2021"
+                        subsection="Improved my communication and managment skills, key strenghts for a future software engineer. It also reinforced my adaptability and autonomy to deliver projects on time, preparing me for real-world challenges in tech."
+                ></Education>
+                <Education
+                        name="Observational Internship - Alcatel Lucent Entreprise"
+                        date="jan. 2019 - feb. 2019"
+                        subsection="Early 3rd Year internship introduced me to corporate environments and team dynamics and also raise my interest in technology and engineering. It help me understand the importance of collaboration in a compagny, values I now apply to my studies."
+                        end={true}
+                ></Education>
+            </div>
+        </div>
+        <div class="new-section">
             <div class="text-container">
                 <h3>Interests</h3>
                 <p>Engineering student & artist: I solve technical problems methodically and create digital art, 3D
                     models, and games sometimes for clients. This balance keeps me sharp, reliable, and ready to build
                     practical software as a developer.</p>
             </div>
-
             <div class="align-horizontal">
                 <CtaTag
                         label="LossGraphiste"
@@ -223,12 +238,6 @@
                     Now, I want to apply these skills as a software developer, building practical tools that address
                     real needs.
                 </p>
-            </div>
-        </div>
-        <div class="new-section">
-            <div class="text-container">
-                <h3>Career Development</h3>
-                <p></p>
             </div>
         </div>
         <div class="new-section">
