@@ -6,7 +6,7 @@
     const pages = [
         {name: "home", url:'/', selected:false},
         {name: "projects", url:'/projects', selected:false},
-        {name: "about", url:'', selected:false},
+        {name: "courses", url:'/education', selected:false},
     ]
 
     pages.forEach(page => {
@@ -38,9 +38,10 @@
     }
 
     .selected {
-        outline: 1px solid rgba(255, 255, 255, 0.5);
-        border-radius: 7px;
-        padding: 0.2rem 0.6rem;
+        --outline: 1px solid rgba(255, 255, 255, 0.5);
+        --border-radius: 7px;
+        --padding: 0.2rem 0.6rem;
+        font-weight: bold;
     }
 
     .non-selected {
@@ -61,14 +62,16 @@
         height: 100%;
         padding: var(--navbar-margin-vertical) var(--navbar-margin-horizontal);
 
-        /*background-color: var(--color-bg-2);*/
-        border-radius: 7px;
+        border-radius: 10px;
         margin: var(--navbar-margin-vertical) var(--navbar-margin-horizontal);
-        background: var(--color-bg-2) 0.2;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
         backdrop-filter: blur(5px);
         -webkit-backdrop-filter: blur(5px);
         border: 1px solid rgba(255, 255, 255, 0.5);
+
+        border: 1px solid color-mix(in srgb,var(--color-text) 11%,transparent);
+        background-color: color-mix(in srgb,rgba(150, 150, 200, 0.8) 10%,transparent);
+        backdrop-filter: blur(4px);
 
         display: flex;
 
