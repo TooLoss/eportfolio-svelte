@@ -41,7 +41,7 @@
         <section class="section-view">
             <div class="text-container">
                 <h1 id="main-title" bind:this={titleRef}>Hi! This is Bilèle El Haddadi. 👋</h1>
-                <h2 class="color-text-muted">software engineer student</h2>
+                <h2 class="color-text-muted">software engineer student · first year</h2>
                 <h2 class="color-text-muted">toulouse · france 🇫🇷</h2>
                 <div class="align-horizontal margin-top1">
                     <CtaTag
@@ -241,10 +241,20 @@
             </div>
         </div>
         <div class="new-section">
-            <div class="text-container">
-                <h3>Civic Engagement</h3>
-                <p></p>
+            <h3>Civic Engagement</h3>
+            <div class="logo-center">
+                <img src="https://net7.dev/net7.svg" class="heading-image container" alt="net7 logo">
             </div>
+            <p>
+                Passionate about technology and community-driven innovation,
+                I have joined Net7, ENSEEIHT’s student association dedicated to
+                digital projects and collaborative learning. Eager to deepen my
+                understanding of computer science, I am ready to contribute to
+                their initiatives, whether through workshops, hackathons, or
+                team projects. This engagement reflects my enthusiasm for
+                learning alongside peers and exploring new challenges in a
+                dynamic and creative environment.
+            </p>
         </div>
         <div class="new-section">
             <div class="text-container">

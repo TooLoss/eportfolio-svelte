@@ -7,7 +7,9 @@
     export const prerender = true;
 </script>
 
-<Navbar></Navbar>
+<Navbar
+    currentPage="courses"
+></Navbar>
 
 <section class="page">
     <section class="section-view">
