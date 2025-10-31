@@ -67,7 +67,6 @@
     .bar {
         margin: 4rem 0;
         height: 0;
-        max-width: 1000px;
         background-color: var(--color-border);
         border: 1px solid var(--color-border);
     }

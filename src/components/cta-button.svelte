@@ -1,9 +1,10 @@
 <script>
     export let label = 'Button';
     export let url = "";
+    export let newpage = false;
 </script>
 
-<a href={url} rel="noopener noreferrer" target="">
+<a href={url} rel="noopener noreferrer" target={newpage ? "_blank" : ""}>
     <button class="cta-button">
         <span>{label}</span>
     </button>

@@ -72,6 +72,10 @@
                     <CtaButton
                             url="/education"
                             label="English Resume"></CtaButton>
+                    <CtaButton
+                            url="https://youtu.be/AakWdjNBZW4"
+                            newpage={true}
+                            label="Video Pitch"></CtaButton>
                 </div>
             </div>
         </section>
@@ -79,7 +83,7 @@
 </header>
 
 <!-- TODO: API Call to get projects -->
-<section class="page">
+<article class="page">
     <section class="section-view">
         <div class="new-section">
             <h3>Education</h3>
@@ -242,28 +246,63 @@
         </div>
         <div class="new-section">
             <h3>Civic Engagement</h3>
-            <div class="logo-center">
+            <a class="logo-center" href="https://net7.dev" target="_blank">
                 <img src="https://net7.dev/net7.svg" class="heading-image container" alt="net7 logo">
-            </div>
+            </a>
             <p>
-                Passionate about technology and community-driven innovation,
-                I have joined Net7, ENSEEIHT’s student association dedicated to
-                digital projects and collaborative learning. Eager to deepen my
-                understanding of computer science, I am ready to contribute to
-                their initiatives, whether through workshops, hackathons, or
-                team projects. This engagement reflects my enthusiasm for
-                learning alongside peers and exploring new challenges in a
-                dynamic and creative environment.
+            I am interested in joining Net7, ENSEEIHT’s student association specializing in
+            digital projects and collaborative development. My goal is to
+            expand my expertise in computer science while contributing to the
+            association’s initiatives, including workshops, hackathons, and
+            team-based projects. I hope this experience will allows me to engage with peers
+            and address technical challenges.
+            </p>
+            <a class="logo-center" href="https://capitoledulibre.org/" target="_blank">
+                <img src="https://capitoledulibre.org//img/logo-capitoledulibre.png" class="heading-images container" alt="capitale du libre logo">
+            </a>
+            <p>
+            With Net7, I’m also involved in Capitole du Libre 2025, an
+            open-source event organized at the school in collaboration with the
+            association. I’m looking forward to contribute to the projects, as the
+            event is still upcoming. Open source matters to me because it
+            aligns with how I like to work: building projects that can
+            help others. It’s rewarding when someone finds value in what I
+            contribute.
             </p>
         </div>
         <div class="new-section">
             <div class="text-container">
                 <h3>Mobility</h3>
-                <p></p>
+                <p>
+                Mobility is a mandatory part of French engineering training (1 semester at least),
+                pushing students to gain international experience through
+                exchanges, internships, or projects abroad. At ENSEEIHT, it’s a
+                chance to grow both professionally and personally. Here my mobility projects for the
+                upcomming years :
+                </p>
+                <p>
+                The UK is a major center for technology and innovation, with top universities
+                and a fast-growing tech scene and cosmopolitan cities. It’s a place where I can explore advanced fields
+                like AI, cybersecurity, and fintech while experiencing a mix of rich history
+                and modern creativity.
+                </p>
+                <p>
+                Germany is well known for it's strong engineering tradition, focusing on precision,
+                sustainability, and industry leadership. By learning German and working in this
+                environment, I want to improve my skills in science and software
+                development, turning ideas into practical and efficient solutions.
+                </p>
+                <p>
+                China is leading the way in fast-paced technological progress,
+                especially in AI and smart infrastructure. It’s a country where
+                big ideas become reality quickly. I’m excited to see how
+                technology is changing industries and society, and to learn
+                from this dynamic environment.
+                </p>
             </div>
         </div>
     </section>
-</section>
+</article>
 
 <Footer></Footer>
 

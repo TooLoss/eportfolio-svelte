@@ -10,6 +10,7 @@ export function getIconLanguages(lang: string): string {
         Java: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg',
         Kotlin: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg',
         Ada: "https://www.svgrepo.com/show/373419/ada.svg",
+        C: "https://upload.wikimedia.org/wikipedia/commons/3/35/The_C_Programming_Language_logo.svg",
     }
     return icons[lang] || '';
 }

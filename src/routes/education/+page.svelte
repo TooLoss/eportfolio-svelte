@@ -19,9 +19,13 @@
                 <h1>Engineering course</h1>
                 <h2 class="color-text-muted">key features</h2>
             </div>
-        </section>
-        <section class="new-section">
             <h3>First Year</h3>
+            <p>
+            At ENSEEIHT, my first year covers math, algorithms,
+            programming, and introduction courses in AI, data, and software.
+            Later, I would likely focus on either software engineering or the
+            specialized AI track.
+            </p>
             <ListStack
                     name="Computer Science"
                     stackComponents={[
@@ -39,6 +43,7 @@
                     name="Programming Languages"
                     stackComponents={[
     { label: "Ada", iconSrc: getIconLanguages("Ada") },
+    { label: "C", iconSrc: getIconLanguages("C") },
   ]}
             />
             <ListStack

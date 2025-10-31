@@ -10,7 +10,7 @@
     ],
     "motivation": "As a final-year prépa project on the theme “transform, transition, convert,” I developed a document scanning tool designed to simplify the shift from paper to digital archives. The focus was on efficiency: the tool needed to process documents quickly using just a phone camera, with minimal user input. To achieve this, I automated the entire workflow, from image capture to digital conversion.",
     "strategy": "The entrie will be an phone picture of of document. The output the scanned and binarized document with a correct format. I choose a bottum down tactics and found smaller issues to tackle in order to make it work.\n- Find corner position of the document\n- Make a transformation to the correct format\n- Treshold locally to make it efficient against light changes and shadow",
-    "outcome": "-outcome"
+    "outcome": "Rigorous scientific approach by reading thesis and scientific papers has helped me plan every algorithm I will use before starting the code. It allowed me to take less time debugging. Reading through papers helped me understand very clearly how scientists managed to get their results. I could then compare multiple solutions given and adapt them to make my own solution."
   },
   {
     "projectTitle": "Flashcard Android App",
@@ -21,8 +21,8 @@
       { "label": "Java"},
       { "label": "Kotlin"}
     ],
-    "motivation": "-",
-    "strategy": "-",
-    "outcome": "-"
+    "motivation": "Eager to learn German, I choose german classes and developped this application to generate random vocabulary and conjugation tests.",
+    "strategy": "I choose to build a phone app with Android Studio to learn everywhere I can. I made the UI/UX in Penpot beforehand to take less time programming the interface. As for the backend, I made my database with a simple single .csv file. I didn't need many tables. For each test, I get a random row in the table and ask the user. If the user gives up, the word will be asked again afterward. By the time, I did not have the infrastructure to host the wordlist, so the .csv was directly built in the app. Finally, to track my improvements, I design a score system that resets each week.",
+    "outcome": "By regularly using this app, I improved my grades in german classes and used more diverse vocabulary when talking german. I learned that I can build my own solutions to tackle issues. If I had to remake the projects today, I would put my database outside the app to update it easily without updating all the androdi app."
   }
 ]
