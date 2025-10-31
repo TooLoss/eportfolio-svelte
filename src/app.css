@@ -316,9 +316,15 @@ footer {
     padding: 2rem 10rem;
 }
 
+@media (max-width: 768px) {
+    .logo-center {
+        padding: 0;
+    }
+}
+
 .logo-center > img {
-    max-height: 400px;
-    max-width: 400px;
+    max-height: 70%;
+    max-width: 70%;
     width: auto;
     height: auto;
     object-fit: contain;
