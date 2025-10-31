@@ -42,6 +42,9 @@
             <div class="text-container">
                 <h1 id="main-title" bind:this={titleRef}>Hi! This is Bilèle El Haddadi. 👋</h1>
                 <h2 class="color-text-muted">software engineer student · first year</h2>
+                <h2 class="color-text-muted">
+                    <a href="https://www.enseeiht.fr/fr/index.html" target="_blank" class="color-text-muted hover-link">enseeiht</a>
+                </h2>
                 <h2 class="color-text-muted">toulouse · france 🇫🇷</h2>
                 <div class="align-horizontal margin-top1">
                     <CtaTag
@@ -82,7 +85,6 @@
     </section>
 </header>
 
-<!-- TODO: API Call to get projects -->
 <article class="page">
     <section class="section-view">
         <div class="new-section">
@@ -120,7 +122,7 @@
         <div class="new-section">
             <div class="text-container">
                 <h3>Projects</h3>
-                <p>Explore my projects below.</p>
+                <p>Explore my projects below and learn more about goal, strategy and outcome for each one.</p>
             </div>
             <div class="grid-2 margin-top1">
                 <div class="project-overview">
@@ -194,7 +196,7 @@
             <div class="logo-center">
                 <img src={lossLogo} class="rounded-image container" alt="loss logo">
             </div>
-            <div class="text-container left-padding-eachelement">
+            <div class="text-container">
                 <p>
                     I’m studying engineering, where I’ve learned to solve technical problems methodically. Alongside
                     my studies, I create digital art, 3D models, and video games work. Sometimes for clients,
@@ -211,6 +213,13 @@
                     These experiences have taught me how to communicate effectively, meet deadlines, and collaborate
                     with different kinds of people. They also help me step back, recharge through creativity, and
                     return to technical projects with a fresh perspective and improved focus.
+                </p>
+                <p>
+                    Most of my creations are free to use to benefit most
+                    people. I also benefit from the free work of others in my
+                    projects, so I had to make my own contribution. I'm in
+                    favor of a free open source web to keep the circle of
+                    creativity alive.
                 </p>
                 <div class="align-horizontal justify-center">
                     <div class="sketchfab-embed-wrapper">

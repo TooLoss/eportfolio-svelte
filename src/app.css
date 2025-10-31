@@ -323,3 +323,7 @@ footer {
     height: auto;
     object-fit: contain;
 }
+
+.hover-link {
+    text-decoration: underline;
+}
