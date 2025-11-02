@@ -17,6 +17,9 @@
     import emailLogo from '$lib/assets/email-logo.svg'
     import lossLogo from "$lib/assets/loss-logo.jpg"
 
+    import resumeEN from "/static/ResumeCS-EN.pdf"
+    import resumeFR from "/static/ResumeCS-FR.pdf"
+
     let pinnedStack = [
         {label: "Python", iconSrc: "https://www.svgrepo.com/show/452091/python.svg"},
     ]
@@ -70,10 +73,10 @@
                 </p>
                 <div class="margin-top1 two-grid">
                     <CtaButton
-                            url="/education"
+                            url="{resumeFR}"
                             label="French Resume"></CtaButton>
                     <CtaButton
-                            url="/education"
+                            url="{resumeEN}"
                             label="English Resume"></CtaButton>
                     <CtaButton
                             url="https://youtu.be/AakWdjNBZW4"
