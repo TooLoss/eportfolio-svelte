@@ -3,7 +3,7 @@
 
 <footer>
     <section id="no-margin" class="margin-top1">
-        <div class="bar"></div>
+        <hr/>
 
         <section class="contact-section">
             <div class="text-container">
@@ -20,7 +20,7 @@
             </div>
         </section>
 
-        <div class="bar"></div>
+        <hr/>
         <div class="footer-container center">
             <p>Made with Svelte.</p>
             <p>&copy; {new Date().getFullYear()} Bilèle EL HADDADI. MIT License.</p>
@@ -64,11 +64,10 @@
         margin-left: 1rem;
     }
 
-    .bar {
+    hr {
         margin: 4rem 0;
-        height: 0;
         background-color: var(--color-border);
-        border: 1px solid var(--color-border);
+        color: var(--color-border);
     }
 
     .contact-section {
