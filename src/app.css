@@ -29,7 +29,7 @@ time, mark, audio, video {
 
     --hue: 235;
 
-    --color-bg-1: hsl(var(--hue), 15%, 6%);
+    --color-bg-1: hsl(var(--hue), 15%, 4%);
     --color-bg-2: hsl(var(--hue), 20%, 10%);
     --color-bg-3: hsl(var(--hue), 30%, 15%);
     --color-border: hsl(var(--hue), 20%, 25%);
