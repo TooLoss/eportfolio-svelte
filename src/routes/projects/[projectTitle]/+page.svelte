@@ -1,7 +1,7 @@
 <script lang="ts">
-    import Stack from "$components/stack.svelte";
+    import Stack from "$lib/components/stack.svelte";
     import { getIconLanguages } from "$lib/iconLanguages";
-    import CtaTag from "\$components/cta-tag.svelte";
+    import CtaTag from "$lib/components/cta-tag.svelte";
 
 
     export let data: any;

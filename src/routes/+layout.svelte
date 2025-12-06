@@ -1,8 +1,8 @@
 <script lang="ts">
 	import favicon from '$lib/assets/favicon.svg';
 	import '../app.css';
-    import Footer from '$components/footer.svelte';
-    import Navbar from '$components/navbar.svelte';
+    import Footer from '$lib/components/footer.svelte';
+    import Navbar from '$lib/components/navbar.svelte';
 	let { children } = $props();
     export const prerender = true;
 </script>

@@ -1,6 +1,6 @@
 <script lang="ts">
     import { type Snippet } from 'svelte';
-    import Stack from '$components/stack.svelte'
+    import Stack from '$lib/components/stack.svelte'
 
     let {
         projectTitle = 'project',

@@ -1,6 +1,6 @@
 <script lang="ts">
-    import ProjectOverview from '$components/project-overview.svelte';
-    import showcaseRepos from '$data/showcase-repo.json';
+    import ProjectOverview from '$lib/components/project-overview.svelte';
+    import showcaseRepos from '$lib/data/showcase-repo.json';
     import { getIconLanguages } from "$lib/iconLanguages";
 
     interface Project {

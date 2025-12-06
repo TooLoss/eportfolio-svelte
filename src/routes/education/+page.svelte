@@ -1,6 +1,6 @@
 <script>
-    import CtaReturn from "\$components/cta-return.svelte";
-    import ListStack from "\$components/list-stack.svelte";
+    import CtaReturn from "$lib/components/cta-return.svelte";
+    import ListStack from "$lib/components/list-stack.svelte";
     import {getIconLanguages} from "$lib/iconLanguages.js";
     export const prerender = true;
 </script>

@@ -4,13 +4,11 @@
 
     let titleRef: HTMLElement;
 
-    import CtaTag from '$components/cta-tag.svelte';
-    import ProjectOverview from '$components/project-overview.svelte';
-    import Education from '$components/education.svelte';
-    import CtaButton from '$components/cta-button.svelte';
-    import Swiper from "\$components/swiper.svelte";
-
-    import GithubProjects from "\$components/github-projects.svelte";
+    import CtaTag from '$lib/components/cta-tag.svelte';
+    import ProjectOverview from '$lib/components/project-overview.svelte';
+    import Education from '$lib/components/education.svelte';
+    import CtaButton from '$lib/components/cta-button.svelte';
+    import Swiper from "\$lib/components/swiper.svelte";
 
     import emailLogo from '$lib/assets/email-logo.svg'
     import lossLogo from "$lib/assets/loss-logo.jpg"
@@ -23,7 +21,7 @@
     ]
 
 
-    import showcaseArt from "$data/showcase-art.json";
+    import showcaseArt from "$lib/data/showcase-art.json";
 
     const {swiperImages} = showcaseArt;
 

@@ -1,5 +1,5 @@
 <script lang="ts">
-import Stack from "$components/stack.svelte";
+import Stack from "$lib/components/stack.svelte";
 
 let {
     name = 'front-end',

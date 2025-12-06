@@ -1,6 +1,6 @@
 <script lang="ts">
-    import GithubProjects from "\$components/github-projects.svelte";
-    import CtaReturn from "\$components/cta-return.svelte";
+    import GithubProjects from "\$lib/components/github-projects.svelte";
+    import CtaReturn from "$lib/components/cta-return.svelte";
     export const prerender = true;
 </script>
 
