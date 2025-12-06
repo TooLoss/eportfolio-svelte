@@ -8,8 +8,6 @@
     import ProjectOverview from '$components/project-overview.svelte';
     import Education from '$components/education.svelte';
     import CtaButton from '$components/cta-button.svelte';
-    import Footer from '$components/footer.svelte'
-    import Navbar from '$components/navbar.svelte'
     import Swiper from "\$components/swiper.svelte";
 
     import GithubProjects from "\$components/github-projects.svelte";
@@ -34,10 +32,6 @@
     });
 
 </script>
-
-<Navbar
-        currentPage="home"
-></Navbar>
 
 <header>
     <section class="page">
@@ -315,8 +309,6 @@
         </div>
     </section>
 </article>
-
-<Footer></Footer>
 
 <style lang="css">
     @import "../app.css";

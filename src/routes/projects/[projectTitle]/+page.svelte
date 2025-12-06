@@ -2,9 +2,7 @@
     import Stack from "$components/stack.svelte";
     import { getIconLanguages } from "$lib/iconLanguages";
     import CtaTag from "\$components/cta-tag.svelte";
-    import Footer from '$components/footer.svelte'
-    import Navbar from "$components/navbar.svelte"
-    
+
 
     export let data: any;
     const {project} = data;
@@ -22,8 +20,6 @@
     stackComponents.forEach((component : { label: string; iconSrc: string; }) => component .iconSrc = getIconLanguages(component .label));
     export const prerender = true;
 </script>
-
-<Navbar></Navbar>
 
 <section class="page">
     <section class="section-view">
@@ -73,8 +69,6 @@
         </section>
     </section>
 </section>
-
-<Footer></Footer>
 
 <style>
     #preview-img {

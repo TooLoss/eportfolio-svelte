@@ -1,15 +1,9 @@
 <script>
     import CtaReturn from "\$components/cta-return.svelte";
     import ListStack from "\$components/list-stack.svelte";
-    import Footer from "\$components/footer.svelte";
-    import Navbar from "\$components/navbar.svelte";
     import {getIconLanguages} from "$lib/iconLanguages.js";
     export const prerender = true;
 </script>
-
-<Navbar
-    currentPage="courses"
-></Navbar>
 
 <section class="page">
     <section class="section-view">
@@ -58,8 +52,6 @@
         </section>
     </section>
 </section>
-
-<Footer/>
 
 <style>
 </style>

@@ -1,28 +1,26 @@
 <script lang="ts">
-    let {
-        currentPage=""
-    } = $props();
+
+    import { page } from '$app/stores'
+    import { onMount } from 'svelte'
 
     const pages = [
-        {name: "home", url:'/', selected:false},
-        {name: "projects", url:'/projects', selected:false},
-        {name: "courses", url:'/education', selected:false},
+        {name: "home", url:'/'},
+        {name: "projects", url:'/projects'},
+        {name: "courses", url:'/education'},
     ]
-
-    pages.forEach(page => {
-        page.selected = page.name === currentPage;
-    });
-
 </script>
+
 
 <nav>
     <div class="fill">
         <section class="content">
             <div class="center">
-                {#each pages as page}
-                <a href={page.url}>
-                    <p class="non-selected {page.selected ? 'selected' : ''}">{page.name}</p>
-                </a>
+                {#each pages as p}
+                    <a href={p.url}>
+                        <p class="{ $page.url.pathname === p.url ? 'selected' : 'non-selected' }">
+                            {p.name}
+                        </p>
+                    </a>
                 {/each}
             </div>
         </section>
@@ -38,10 +36,12 @@
     }
 
     .selected {
-        --outline: 1px solid rgba(255, 255, 255, 0.5);
-        --border-radius: 7px;
-        --padding: 0.2rem 0.6rem;
+        /* outline: 1px solid rgba(255, 255, 255, 0.5); */
+        /* border-radius: 7px; */
+        /* padding: 0.2rem 0.6rem; */
         font-weight: bold;
+        border-radius: 7px;
+        padding: 0.2rem 0.4rem;
     }
 
     .non-selected {
